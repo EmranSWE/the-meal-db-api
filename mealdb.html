@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+      #spinner{
+        display: none;
+      }
+    </style>
+</head>
+</head>
+<body>
+  <!-- Search button  -->
+  <header class="bg-primary m-1">
+    <h1 class="text-center">The meal DB</h1>
+    <h2 class="text-center text-white">Search You favorite food</h2>
+    <div  class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control mb-3" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchFood()" class="btn btn-outline-secondary text-white mb-3 fs-4" type="button" id="button-search">Search</button>
+      </div>
+  </header>
+            <!-- Spinner -->
+         <button id="spinner" class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Loading...
+           </button>
+      <div>
+        <p id="error-message" class="text-danger"></p>
+      </div>
+
+     <!-- Single meal details -->
+     <div id="meal-details" class="w-50 mx-auto">
+     </div>
+
+    <!-- Total meal display -->
+      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+    <script src="js/meal-db.js"></script>
+</body>
+</html>
